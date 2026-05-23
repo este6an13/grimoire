@@ -318,7 +318,7 @@ The project explored how **mobility distributions reshape distributed coordinati
 
 **Mar 2022 - Aug 2023 · Professional Experience**
 
-> Designing systems not just to process people, but to guide them through structured learning.
+> *Designing systems not just to process people, but to guide them through structured learning.*
 
 Led the development and ownership of an internal platform used by training teams to manage classes, track student progress, and coordinate learning operations at scale.
 
