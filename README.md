@@ -137,6 +137,20 @@ Overall, the project served as a proof of concept for deploying similar systems 
 
 ---
 
+### 🗺️ Mailmap: From Text Files to Interfaces
+
+**Feb 2024 – Sep 2024 · Professional Experience**
+
+> *Giving structure to a workflow that once lived only in text files, pull requests, and convention; making it navigable by design.*
+
+A project focused on migrating an internal operational workflow from manually edited mapping files into a structured web-based system. What previously existed as static text maintained through pull requests was gradually translated into a dedicated interface with validation, persistence, and operational workflows.
+
+**Themes:** Workflow Automation, Workflow Formalization
+
+**Skills:** Python, TypeScript, React.js, NoSQL, DynamoDB, ETL
+
+---
+
 ### 🩺 Bayesian Neural Networks for Medical AI
 
 **Apr 2024 – Jul 2024 · Commission**
@@ -616,7 +630,7 @@ Developed a fixed assets inventory management application using the **Oracle APE
 
 One level of a role-playing game designed to teach fundamental math concepts to children.
 
-**Repository:** Available Soon
+**Repository:** 🔗 [AdventureMath](https://github.com/este6an13/AdventureMath)
 
 **Course:** Object-Oriented Programming
 
