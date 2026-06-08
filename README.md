@@ -6,6 +6,22 @@ Each entry represents a small spell of learning, discovery, or problem-solving.
 
 ---
 
+### 🌐 Resources - Web Resource Collection
+
+**May 2026 · Personal Project**
+
+> *A personal library for preserving articles, documentation, and resources worth revisiting.*
+
+A personal archive for collecting web articles, documentation, tools, and references. Created for preserving, sharing and rediscovering useful knowledge.
+
+**Skills:** HTML/CSS, Vanilla JS, Python
+
+**Repository:** 🔗 [resources](https://github.com/este6an13/resources)
+
+**URL:** 🌐 https://este6an13.github.io/resources/
+
+---
+
 ### 📼 Casetes - Personal Music Library
 
 **Mar 2026 · Personal Project**
@@ -100,6 +116,22 @@ Background execution enables reliable periodic fetches even when the app is clos
     </td>
   </tr>
 </table>
+
+---
+
+### 🪶 Grimoire - Interactive Project Portfolio
+
+**Nov 2025 – Present · Personal Project**
+
+> *An archive of crafted artifacts, preserving ideas, experiments, and works.*
+
+A personal portfolio and project catalog designed as a digital grimoire, where software projects, experiments, and creations are organized as discoverable spells; including the grimoire itself.
+
+**Skills:** HTML/CSS, Vanilla JS, Markdown Parsing
+
+**Repository:** 🔗 [grimoire](https://github.com/este6an13/grimoire)
+
+**URL:** 🌐 https://este6an13.github.io/grimoire/
 
 ---
 
