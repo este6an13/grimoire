@@ -6,6 +6,22 @@ Each entry represents a small spell of learning, discovery, or problem-solving.
 
 ---
 
+### 🖋️ Manuscript - Collection of Handwritten Algorithms
+
+**Jun 2026 · Personal Project**
+
+> *When algorithms may be summoned instantly, understanding must still be earned.*
+
+ A personal notebook and codebase dedicated to collecting algorithms written entirely from first principles, by hand (typewritten). Created as a deliberate practice space for developing intuition across computer science, mathematics, and statistics.
+
+**Skills:** Python, Algorithms, Mathematics, Statistics
+
+**Repository:** 🔗 [manuscript](https://github.com/este6an13/manuscript)
+
+**URL:** 🌐 https://este6an13.github.io/manuscript/
+
+---
+
 ### 🌐 Resources - Web Resource Collection
 
 **May 2026 · Personal Project**
