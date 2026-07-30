@@ -6,6 +6,24 @@ Each entry represents a small spell of learning, discovery, or problem-solving.
 
 ---
 
+### 🚊 Stochastic Modelling for Bogotá's BRT System
+
+**Jul 2026 - Present · Independent Research**
+
+> *Building statistical evidence one algorithm at a time.*
+
+A research codebase dedicated to developing the core algorithms behind my work on Bogotá's BRT system. Unlike the broader OSLTM repository, which serves as a sandbox for experimentation and rapid prototyping, this project focuses on a carefully curated collection of production-quality implementations that support reproducible statistical analyses.
+
+Every algorithm is rewritten by hand, without autocompletion or agentic assistance, as a deliberate exercise in understanding. Rather than optimizing for development speed, the project prioritizes code that can be fully explained, verified, and maintained, ensuring that every statistical result is backed by implementations I genuinely understand.
+
+**Themes:** reproducible research, statistical computing
+
+**Skills:** Python, Statistical Computing, Data Engineering, Scientific Computing
+
+**Repository:** 🔗 [tm](https://github.com/este6an13/tm)
+
+---
+
 ### 🖋️ Manuscript - Collection of Handwritten Algorithms
 
 **Jun 2026 · Personal Project**
@@ -64,11 +82,11 @@ The application features client-side dynamic organization via tags, a persistent
 
 > *Tracing the hidden rhythms of a city through the flow of its passengers.*
 
-A research codebase exploring the dynamics of Bogotá’s TransMilenio system through **stochastic modelling**. Using passenger check-in and check-out transaction data, the project constructs arrival profiles across stations and time, studying how daily demand patterns emerge across weekdays, weekends, and holidays.
+A research codebase exploring the dynamics of Bogotá’s TransMilenio system through **stochastic modelling**.
 
-The system builds a reproducible data pipeline that downloads public datasets, aggregates passenger arrivals into time bins, and enables statistical analyses of **profile shape, station similarity, and arrival intensity**. These experiments explore whether passenger arrivals can be described by **non-homogeneous Poisson processes**, and how stations cluster according to their demand patterns.
+Originally conceived as a broader exploration including **online statistical learning** (that's the reason for the OSL prefix), the project currently focuses on **point processes and queueing networks** as tools for understanding and simulating urban transit dynamics.
 
-Originally conceived as a broader exploration including **online statistical learning**, the project currently focuses on **point processes and queueing networks** as tools for understanding and simulating urban transit dynamics.
+Note: This repo is now treated as a sandbox just for exploring ideas and testing hypotheses. The real evidence will live in [tm](https://github.com/este6an13/tm).
 
 **Themes:** stochastic processes, simulation, queueing theory, transportation modelling, statistical learning.
 
