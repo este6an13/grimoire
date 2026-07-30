@@ -440,13 +440,13 @@ Although the results deviated from the reference study, the project exposed crit
 
 A three-phase study of a primary school contact network based on the dataset from [this study](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0023176) on dynamic contact networks.
 
-**Phase I: Replication & Structural Analysis:**
+- **Phase I: Replication & Structural Analysis:**
 Reconstructed cumulative and exposure matrices, enriched node attributes, and computed classical centrality and global measures (degree, betweenness, closeness, eigenvector, assortativity, clustering, path metrics) using NetworkX and Gephi.
 
-**Phase II: Community Structure:**
+- **Phase II: Community Structure:**
 Applied Louvain community detection (multiple resolutions), analyzed centrality within and across communities, and compared structural partitions with classroom organization.
 
-**Phase III: Graph Convolutional Networks:**
+- **Phase III: Graph Convolutional Networks:**
 Built weighted and timestamp-based interaction graphs and trained GCN models for node-level prediction of grade, classroom, and community assignments (6 and 10 partitions), evaluating how temporal structure and edge filtering affect predictive performance.
 
 **Repositories:**
