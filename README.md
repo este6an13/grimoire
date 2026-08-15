@@ -4,6 +4,19 @@
 This repository gathers my academic and personal projects: from foundational coursework to independent explorations.
 Each entry represents a small spell of learning, discovery, or problem-solving.
 
+### On Method
+
+These projects span a period in which the craft of writing software changed underneath us. Rather than leave that invisible, each entry carries a **craft** mark naming how it was made and with which tools:
+
+- ✍️ **handwritten**: written by hand with as little assistance as possible (web search).
+- ⌨️ **autocomplete**: written by hand with AI autocompletions (tabs).
+- 💬 **chat**: written in the editor, with a model consulted to request snippets (copy/paste)
+- 👾 **agentic**: written with a coding assistant (vibecoding)
+
+Where methods were used together, the mark joins them (+). Where they changed over time, it shows the progression (→). The tools and models behind each mark are listed on the card itself.
+
+> Why this? For transparency, so no one assumes I created all of this unaided. But also because I find the progression interesting to look back on: the differences between AI-generated and manual code, and whether different models, tools, and periods leave patterns of their own.
+
 ---
 
 ### 🚊 Stochastic Modelling for Bogotá's BRT System
@@ -20,6 +33,8 @@ Every algorithm is rewritten by hand, without autocompletion or agentic assistan
 
 **Skills:** Python, Statistical Computing, Data Engineering, Scientific Computing
 
+**Craft:** ✍️
+
 **Repository:** 🔗 [tm](https://github.com/este6an13/tm)
 
 ---
@@ -33,6 +48,8 @@ Every algorithm is rewritten by hand, without autocompletion or agentic assistan
  A personal notebook and codebase dedicated to collecting algorithms written entirely from first principles, by hand (typewritten). Created as a deliberate practice space for developing intuition across computer science, mathematics, and statistics.
 
 **Skills:** Python, Algorithms, Mathematics, Statistics
+
+**Craft:** ✍️
 
 **Repository:** 🔗 [manuscript](https://github.com/este6an13/manuscript)
 
@@ -49,6 +66,8 @@ Every algorithm is rewritten by hand, without autocompletion or agentic assistan
 A personal archive for collecting web articles, documentation, tools, and references. Created for preserving, sharing and rediscovering useful knowledge.
 
 **Skills:** HTML/CSS, Vanilla JS, Python
+
+**Craft:** 👾 Antigravity (Gemini 3.1, Opus 4.6)
 
 **Repository:** 🔗 [resources](https://github.com/este6an13/resources)
 
@@ -69,6 +88,8 @@ The application features client-side dynamic organization via tags, a persistent
 **Themes:** intentional design, music curation, local-first
 
 **Skills:** Python, FastAPI, Vanilla JS, HTML/CSS, API Integration
+
+**Craft:** 👾 Antigravity (Gemini 3.1, Opus 4.6)
 
 **Repository:** 🔗 [casetes](https://github.com/este6an13/casetes)
 
@@ -92,6 +113,8 @@ Note: This repo is now treated as a sandbox just for exploring ideas and testing
 
 **Skills:** Python, Statistical Modelling, Point Processes, Queueing Theory, Data Engineering
 
+**Craft:** ✍️ + 💬 ChatGPT → 👾 Cursor (Opus 4.6), Antigravity (Gemini 3.1, Opus 4.6)
+
 **Repository:** 🔗 [osltm](https://github.com/este6an13/osltm)
 
 ---
@@ -112,6 +135,8 @@ There’s no algorithm deciding what should be seen, no pressure to post regular
 
 **Skills:** Python (FastAPI), HTMX, GCP
 
+**Craft:** 👾 Antigravity (Gemini 3.1, Opus 4.6)
+
 **Repository:** 🔗 [momentos](https://github.com/este6an13/momentos)
 
 **URL:** 🌐 https://momentos.gallery/
@@ -131,6 +156,8 @@ The app periodically fetches *Top* and *Best* stories via the **official Hacker 
 Background execution enables reliable periodic fetches even when the app is closed. **Optional push notifications** alert the user when new stories exceed the chosen threshold.
 
 **Skills:** Android Development, Kotlin
+
+**Craft:** 💬 ChatGPT → 👾 Cursor (Opus 4.6)
 
 **Repository:** 🔗 [hn-monitor](https://github.com/este6an13/hn-monitor)
 
@@ -163,6 +190,8 @@ A personal portfolio and project catalog designed as a digital grimoire, where s
 
 **Skills:** HTML/CSS, Vanilla JS, Markdown Parsing
 
+**Craft:** ✍️ + 💬 ChatGPT → 👾 Cursor (Opus 4.6), Antigravity (Gemini 3.1, Opus 4.6), Claude (Opus 5)
+
 **Repository:** 🔗 [grimoire](https://github.com/este6an13/grimoire)
 
 **URL:** 🌐 https://este6an13.github.io/grimoire/
@@ -178,6 +207,8 @@ A personal portfolio and project catalog designed as a digital grimoire, where s
 An experimental framework for evaluating collaborative code generation with large language models using verifiable rewards. This project explores how LLM agents collaborate to iteratively generate and optimize code within a controlled experimental design. By varying the number of agents and the optimization strategy (iterations or time limit), we evaluate collaboration dynamics through objective signals, specifically, whether generated programs execute correctly and how efficiently they run. Execution time and correctness serve as verifiable criteria, enabling rigorous assessment of LLM performance and reliability without relying on subjective judgments. Although the statistical power achieved in this pilot was limited, the project demonstrates the potential of combining experimental design with verifiable evaluation to better understand collaborative dynamics in LLMs.
 
 **Skills:** Large Language Models (LLMs), AI Agents, Experimental Design, Statistical Data Analysis
+
+**Craft:** 💬 ChatGPT
 
 **Repository:** 🔗 [llm-code-refinery](https://github.com/este6an13/llm-code-refinery)
 
@@ -201,6 +232,8 @@ Overall, the project served as a proof of concept for deploying similar systems 
 
 **Skills:** Data Engineering, Event-Driven Architecture, Message Brokers, Data Analysis, IoT
 
+**Craft:** ✍️ + 💬 ChatGPT
+
 ---
 
 ### 🗺️ Mailmap: From Text Files to Interfaces
@@ -214,6 +247,8 @@ A project focused on migrating an internal operational workflow from manually ed
 **Themes:** Workflow Automation, Workflow Formalization
 
 **Skills:** Python, TypeScript, React.js, NoSQL, DynamoDB, ETL
+
+**Craft:** ✍️ + 💬 ChatGPT
 
 ---
 
@@ -229,6 +264,8 @@ Developed, trained and deployed a **Bayesian Neural Network (BNN)** for **uncert
 
 **Skills:** Python, TensorFlow, Bayesian Neural Networks, Probabilistic Machine Learning, MLOps, Deep Learning
 
+**Craft:** ✍️ + 💬 ChatGPT
+
 ---
 
 ### 🤖 RAG-Based University Chatbot
@@ -240,6 +277,8 @@ Developed, trained and deployed a **Bayesian Neural Network (BNN)** for **uncert
 A chatbot that uses Retrieval Augmented Generation (RAG) to answer questions for the Faculty of Engineering community at the National University of Colombia. An Open-Source Software initiative for the National University of Colombia.
 
 **Skills:** Chatbots, Retrieval-Augmented Generation (RAG), Generative AI, Open-Source Software
+
+**Craft:** ✍️ + 💬 ChatGPT
 
 **Repository:** 🔗 [reprebot](https://github.com/Represoft/reprebot)
 
@@ -254,6 +293,8 @@ A chatbot that uses Retrieval Augmented Generation (RAG) to answer questions for
 Software to extract key information from printed and handwritten text on bank checks, using object detection techniques, cloud ML services and Retrieval Augmented Generation (RAG). The solution provides enhanced transparency by reporting confidence levels in the OCR results.
 
 **Skills:** Optical Character Recognition (OCR), Generative AI, Machine Learning, RAG
+
+**Craft:** ✍️ + 💬 ChatGPT
 
 **Repository:** 🔗 [checks-ocr](https://github.com/este6an13/checks-ocr)
 
@@ -277,6 +318,8 @@ Revealed data regimes where quantum layers offer gains under scarcity, and failu
 
 **Skills:** Quantum Machine Learning, Quanvolutional Neural Networks, Pennylane, PyTorch, CNNs, Variational Quantum Circuits
 
+**Craft:** ✍️ + 💬 ChatGPT
+
 ---
 
 ### 🫁 Medical Report Generation with Pre-Trained Medical Transformers
@@ -293,6 +336,8 @@ Implemented an **encoder–decoder transformer architecture** to automatically *
 
 **Skills:** Machine Learning, NLP, PyTorch, TensorFlow, Generative AI, Transformers
 
+**Craft:** ✍️ + 💬 ChatGPT
+
 ---
 
 ### 🧫 Neural Networks to Detect Sjögren Syndrome in Salivary Gland Images
@@ -308,6 +353,8 @@ Implementation and comparison of different neural networks models: shallow archi
 **Course:** Neural Networks (Graduate Course)
 
 **Skills:** Neural Networks, Deep Learning, PyTorch, TensorFlow, Machine Learning
+
+**Craft:** ✍️ + 💬 ChatGPT
 
 ---
 
@@ -338,6 +385,8 @@ The replication reproduced the published equilibrium proportions and demonstrate
 
 **Skills:** Game Theory, Cybersecurity Modeling, Optimization
 
+**Craft:** ✍️ + 💬 ChatGPT
+
 ---
 
 ### 🗳️ Ensemble Divination: Borda & Approval Voting for Multiclass Oracles
@@ -365,6 +414,8 @@ The study exposed how different voting axioms reshape ensemble behavior, from pr
 
 **Skills:** Python, scikit-learn, Machine Learning, Ensemble Models, Game Theory
 
+**Craft:** ✍️ + 💬 ChatGPT
+
 ---
 
 ### 💫 Contract-Net over Lévy Flights: Distributed Allocation in Wandering Networks
@@ -390,7 +441,9 @@ The project explored how **mobility distributions reshape distributed coordinati
 
 **Course:** Stochastic Models and Simulation in Computing and Communications
 
-**Skills:** NS-3, Network Simulation, Distributed Systems, Stochastic Processes, Optimization
+**Skills:** NS-3 (C++), Network Simulation, Distributed Systems, Stochastic Processes, Optimization
+
+**Craft:** ✍️ + 💬 ChatGPT
 
 ---
 
@@ -412,6 +465,8 @@ In its later stages, the platform served as the conceptual and functional founda
 
 **Skills:** Python, ASP.NET, C#, JavaScript, SQL
 
+**Craft:** ✍️ + ⌨️ GitHub Copilot
+
 ---
 
 ### 🌀 Adaptive Reservoir Computing with Kuramoto Oscillators
@@ -429,6 +484,8 @@ Although the results deviated from the reference study, the project exposed crit
 **Course:** Computational Physics
 
 **Skills:** Python, Reservoir Computing, Kuramoto Model, Ridge Regression, Time-Series Modeling, Dynamical Systems
+
+**Craft:** ✍️ + 💬 ChatGPT
 
 ---
 
@@ -459,6 +516,8 @@ Built weighted and timestamp-based interaction graphs and trained GCN models for
 
 **Skills:** NetworkX, igraph, Gephi, TensorFlow/Keras, scikit-learn
 
+**Craft:** ✍️ + 💬 ChatGPT
+
 ---
 
 ### 🐜 Profiling, Optimization, and Parallelization of Logistics Route Planning
@@ -476,6 +535,8 @@ Implemented in **C++ (MPI)** and **Python**, focusing on **profiling**  and **sc
 
 **Skills:** C++, High-Performance Computing (HPC), Python, Linux, Scientific Computing
 
+**Craft:** ✍️ + 💬 ChatGPT
+
 ---
 
 ### 🎯 Retrieval-Augmented Generation (RAG) as a Software Development Lifecycle Tool
@@ -491,6 +552,8 @@ Implementation of RAG to support the software development lifecycle (SDLC) by au
 **Course:** Machine Learning (Graduate Course)
 
 **Skills:** Retrieval-Augmented Generation (RAG), Generative AI, Software Engineering
+
+**Craft:** ✍️ + 💬 ChatGPT
 
 ---
 
@@ -511,6 +574,8 @@ Compared results against a baseline SVD model to study convergence and generaliz
 
 **Skills:** Python, Differential Privacy, SVD, Matrix Factorization, Recommender Systems, Machine Learning
 
+**Craft:** ✍️ + 💬 ChatGPT
+
 ---
 
 ### 🌲 Random Forest Model to Predict Employee Attrition
@@ -526,6 +591,8 @@ Random Forest ML model to detect and identify the factors that lead to employee 
 **Course:** Intro to AI
 
 **Skills:** Machine Learning, Scikit-learn, Python
+
+**Craft:** ✍️
 
 ---
 
@@ -544,6 +611,8 @@ Generated heat maps visualizing the temperature field within the furnace based o
 **Course:** Numerical Methods
 
 **Skills:** Numerical Analysis, Finite Difference Method, LU Decomposition, GNU Octave, MATLAB, Simulation
+
+**Craft:** ✍️
 
 ---
 
@@ -565,6 +634,8 @@ Over time, what started as ad-hoc automation became a stable internal system tha
 
 **Skills:** Python, ASP.NET, C#, JavaScript, SQL
 
+**Craft:** ✍️
+
 ---
 
 ### 💞 Cloud-Native Microservices Dating App
@@ -583,6 +654,8 @@ Deployed and orchestrated using **Docker** and **Kubernetes** on **Google Cloud 
 
 **Skills:** Docker, Kubernetes, GraphQL, ASP.NET Core, Golang, Python, Vue.js, Google Cloud Platform (GCP), Microservices Architecture
 
+**Craft:** ✍️
+
 ---
 
 ### 🏥 Medical Records System
@@ -598,6 +671,8 @@ Developed a **web application system** for managing **medical records** in healt
 **Course:** Software Engineering II
 
 **Skills:** Django, Vue.js, PostgreSQL, Git, Full-Stack Development
+
+**Craft:** ✍️
 
 ---
 
@@ -618,6 +693,8 @@ Implemented entirely in **Python**, exploring concepts in **virtualization**, **
 
 **Skills:** Python, Virtualization, Distributed Systems, Computer Architecture
 
+**Craft:** ✍️
+
 ---
 
 ### 🛵 Home Delivery App
@@ -635,6 +712,8 @@ The client was built in **Flutter (Dart)** to provide a responsive, cross-platfo
 **Course:** Software Engineering I
 
 **Skills:** Java, Spring, MongoDB, Dart, Flutter, Full-Stack Development
+
+**Craft:** ✍️
 
 ---
 
@@ -654,6 +733,8 @@ Built a **Flask** server for real-time classification using a **Random Forest** 
 
 **Skills:** Python, Flask, ASP.NET Core MVC, SignalR, Azure, Machine Learning, Cybersecurity
 
+**Craft:** ✍️
+
 ---
 
 ### 📱 Sinograms Mobile App
@@ -671,6 +752,8 @@ Focused on applying advanced data structures to real-world use cases in language
 
 **Skills:** Java, Android Development, Algorithms, Data Structures
 
+**Craft:** ✍️
+
 ---
 
 ### 🗃️ Fixed Assets Inventory Management System
@@ -687,6 +770,8 @@ Developed a fixed assets inventory management application using the **Oracle APE
 
 **Skills:** SQL, Oracle APEX, Data Modeling
 
+**Craft:** ✍️
+
 ---
 
 ### 🎮 AdventureMath RPG Video Game
@@ -701,4 +786,6 @@ One level of a role-playing game designed to teach fundamental math concepts to 
 **Course:** Object-Oriented Programming
 
 **Skills:** C#, Unity
+
+**Craft:** ✍️
 

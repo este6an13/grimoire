@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 description: [],
                 themes: [],
                 skills: [],
+                craft: [],
                 repoLink: '',
                 repoText: '',
                 urlLink: '',
@@ -100,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (line.startsWith('### ')) {
                     project.title = line.replace('### ', '');
                     inDescription = false;
-                } else if (line.startsWith('**') && line.endsWith('**') && !line.includes('Themes:') && !line.includes('Skills:') && !line.includes('Repository:') && !line.includes('URL:') && !line.includes('Course:')) {
+                } else if (line.startsWith('**') && line.endsWith('**') && !line.includes('Themes:') && !line.includes('Skills:') && !line.includes('Craft:') && !line.includes('Repository:') && !line.includes('URL:') && !line.includes('Course:')) {
                     project.meta = line.replace(/\*\*/g, '');
                     inDescription = false;
                 } else if (line.startsWith('> *') && line.endsWith('*')) {
@@ -113,6 +114,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else if (line.startsWith('**Skills:**')) {
                     const skillsStr = line.replace('**Skills:**', '').trim();
                     project.skills = skillsStr.split(',').map(s => s.trim().replace(/\.$/, ''));
+                    inDescription = false;
+                } else if (line.startsWith('**Craft:**')) {
+                    const craftStr = line.replace('**Craft:**', '').trim();
+                    project.craft = parseCraft(craftStr);
                     inDescription = false;
                 } else if (line.startsWith('**Repository:**')) {
                     const repoStr = line.replace('**Repository:**', '').trim();
@@ -155,6 +160,41 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         return parsedProjects;
+    }
+
+    // Parses the **Craft:** value into ordered eras.
+    // Format: "<glyph> <tools>", where methods used together in the same period
+    // are joined by "+" and successive periods are separated by "→". Tools are
+    // optional (unassisted work has none) and belong to the era as a whole.
+    // The glyph carries the method; its name lives in the README's "On Method"
+    // section rather than on every card.
+    const CRAFT_MODES = {
+        '✍️': 'handwritten',
+        '⌨️': 'autocomplete',
+        '💬': 'chat',
+        '👾': 'agentic'
+    };
+
+    const GLYPH_RE = /^(\p{Extended_Pictographic}️?)\s*/u;
+
+    function parseCraft(str) {
+        return str.split('→').map(era => {
+            const methods = [];
+            let tools = '';
+
+            era.split('+').forEach(part => {
+                const text = part.trim();
+                const glyphMatch = text.match(GLYPH_RE);
+                if (!glyphMatch) return;
+                const glyph = glyphMatch[1];
+                methods.push({ glyph, mode: CRAFT_MODES[glyph] || '' });
+                // Whichever method carries the trailing text holds the era's tools.
+                const rest = text.slice(glyphMatch[0].length).trim();
+                if (rest) tools = tools ? `${tools}, ${rest}` : rest;
+            });
+
+            return methods.length ? { methods, tools } : null;
+        }).filter(Boolean);
     }
 
     // Helper to parse basic inline markdown like bold, italics, and links
@@ -232,6 +272,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    function closeAllCraftDetails() {
+        document.querySelectorAll('.craft-toggle[aria-expanded="true"]').forEach(btn => {
+            btn.setAttribute('aria-expanded', 'false');
+            btn.nextElementSibling.hidden = true;
+        });
+    }
+
     function renderProjects() {
         grid.innerHTML = '';
         
@@ -277,6 +324,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 </a>`;
             }
 
+            let craftHtml = '';
+            if (p.craft.length) {
+                // The card shows glyphs alone; the method names live in the detail.
+                const label = p.craft
+                    .map(e => e.methods.map(m => m.glyph).join(' + '))
+                    .join(' → ');
+                const ariaLabel = 'Craft: ' + p.craft.map(e => {
+                    const names = e.methods.map(m => m.mode).join(' and ');
+                    return e.tools ? `${names}, using ${e.tools}` : names;
+                }).join(', then ');
+                const detailRows = p.craft.map(e => `
+                    <div class="craft-era">
+                        <span class="craft-era-mode">${e.methods.map(m => `${m.glyph} ${m.mode}`).join(' + ')}</span>
+                        ${e.tools ? `<span class="craft-era-tools">${e.tools}</span>` : ''}
+                    </div>
+                `).join('');
+
+                craftHtml = `
+                    <div class="craft-mark">
+                        <button class="craft-toggle" type="button"
+                                aria-expanded="false" aria-label="${ariaLabel}">${label}</button>
+                        <div class="craft-detail" hidden>${detailRows}</div>
+                    </div>
+                `;
+            }
+
             const cardHtml = `
                 <div class="spell-card">
                     <div class="spell-title">${p.title}</div>
@@ -286,6 +359,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <button class="read-more-btn">Read more</button>
                     
                     <div class="spell-footer" style="margin-top: auto;">
+                        ${craftHtml}
                         <div class="spell-card-tags">
                             ${allProjTags.map(t => `<span class="spell-card-tag">${t}</span>`).join('')}
                         </div>
@@ -317,6 +391,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
             }
+        });
+
+        // Craft marks: click/tap toggles the detail open (hover is a pointer-device bonus, CSS-only)
+        document.querySelectorAll('.craft-toggle').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const isOpen = btn.getAttribute('aria-expanded') === 'true';
+                closeAllCraftDetails();
+                if (!isOpen) {
+                    btn.setAttribute('aria-expanded', 'true');
+                    btn.nextElementSibling.hidden = false;
+                }
+            });
         });
 
         // Make tags inside cards clickable to filter
@@ -358,6 +444,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!e.target.closest('.tag-input-wrapper')) {
             tagSuggestions.style.display = 'none';
         }
+        if (!e.target.closest('.craft-mark')) {
+            closeAllCraftDetails();
+        }
+    });
+
+    // Escape closes an open craft detail
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeAllCraftDetails();
     });
 
     tagSearchInput.addEventListener('focus', () => {
