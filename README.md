@@ -330,7 +330,7 @@ Revealed data regimes where quantum layers offer gains under scarcity, and failu
 
 Implemented an **encoder–decoder transformer architecture** to automatically **generate diagnostic reports** from **chest X-ray images**, leveraging **pre-trained models** specialized in the **medical domain**.
 
-**Repository:** Available Soon
+**Repository:** 🔗 [transformers-image-captioning*](https://github.com/este6an13/transformers-image-captioning)
 
 **Course:** Computer Vision (Graduate Course)
 
@@ -348,7 +348,7 @@ Implemented an **encoder–decoder transformer architecture** to automatically *
 
 Implementation and comparison of different neural networks models: shallow architectures (with feature extraction based on machine vision techniques) and transfer learning leveraging visual transformers and deep CNN architectures.
 
-**Repository:** Available Soon
+**Repository:** 🔗 [ss-haralick-nn-classification*](https://github.com/este6an13/ss-haralick-nn-classification) · [ss-nn-classification*](https://github.com/este6an13/ss-nn-classification) · [MedViT-FE*](https://github.com/este6an13/MedViT-FE)
 
 **Course:** Neural Networks (Graduate Course)
 
@@ -529,7 +529,7 @@ Built weighted and timestamp-based interaction graphs and trained GCN models for
 Optimized and parallelized an **Ant Colony Optimization (ACO)** algorithm to find near-optimal solutions to the **Travelling Salesman Problem (TSP)**.
 Implemented in **C++ (MPI)** and **Python**, focusing on **profiling**  and **scalability** in **high-performance computing** environments running on **Linux clusters**.
 
-**Repository:** Available Soon
+**Repository:** 🔗 [HPC_DiegoEsteban*](https://github.com/este6an13/HPC_DiegoEsteban)
 
 **Course:** High Performance Computing (HPC)
 
@@ -568,7 +568,7 @@ Introduced **Laplace noise mechanisms** to user-item ratings and model gradients
 Trained and evaluated the model on the **MovieLens 100k** dataset using **K-fold cross-validation**, analyzing the trade-off between privacy budget (ϵ) and accuracy (RMSE).
 Compared results against a baseline SVD model to study convergence and generalization under controlled privacy budgets.
 
-**Repository:** Available Soon
+**Repository:** 🔗 [dp-recommender-system*](https://github.com/este6an13/dp-recommender-system)
 
 **Course:** Cybersecurity (Graduate Course)
 
@@ -648,7 +648,7 @@ Developed a **web and mobile dating platform** built on a **cloud-native microse
 Implemented services in **Vue.js**, **ASP.NET Core**, **Go**, and **Python**, integrating **SQL** and **NoSQL** databases under **REST** and **GraphQL** APIs.
 Deployed and orchestrated using **Docker** and **Kubernetes** on **Google Cloud Platform (GCP)**, achieving scalable service communication and high availability.
 
-**Repository:** Available Soon
+**Repository:** 🔗 [swarch2022i*](https://github.com/este6an13/swarch2022i)
 
 **Course:** Software Architecture
 
@@ -727,7 +727,7 @@ Developed a **cloud-based system** for detecting **Cross-Site Scripting (XSS)** 
 Implemented a **proxy-based MITM architecture** to capture and decrypt HTTPS traffic, analyzing HTML and JavaScript content for malicious patterns.
 Built a **Flask** server for real-time classification using a **Random Forest** model, integrated with an **ASP.NET Core MVC** dashboard and **SignalR** for live alerts: all deployed on **Microsoft Azure**.
 
-**Repository:** Available Soon
+**Repository:** 🔗 [XSSTracker*](https://github.com/este6an13/XSSTracker) · [XSSTrackerServers*](https://github.com/este6an13/XSSTrackerServers)
 
 **Course:** Computer Networks
 
@@ -746,7 +746,7 @@ Built a **Flask** server for real-time classification using a **Random Forest** 
 Developed an **Android** application for consulting Chinese characters (*sinograms*), implementing **AVL Trees**, **Max Heaps**, and the **Rabin–Karp** algorithm for efficient data retrieval and pattern matching.
 Focused on applying advanced data structures to real-world use cases in language processing.
 
-**Repository:** Available Soon
+**Repository:** 🔗 [sinograms-web-scraping*](https://github.com/este6an13/sinograms-web-scraping)
 
 **Course:** Data Structures
 
@@ -764,7 +764,7 @@ Focused on applying advanced data structures to real-world use cases in language
 
 Developed a fixed assets inventory management application using the **Oracle APEX** low-code platform.
 
-**Repository:** Available Soon
+**Repository:** 🔗 [oracle-apex-fixed-assets-app*](https://github.com/este6an13/oracle-apex-fixed-assets-app)
 
 **Course:** Database Systems
 
